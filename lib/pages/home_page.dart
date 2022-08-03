@@ -1,3 +1,4 @@
+import 'package:doctor_app/utils/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,6 +11,15 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      drawer: MyDrawer(),
+      body: const CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            title: Text('MyApp'),
+          )
+        ],
+      )
+    );
   }
 }
