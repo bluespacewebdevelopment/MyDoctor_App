@@ -205,6 +205,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_launcher_icons">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.9.3/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="flutter_lints">
           <value>
             <list>
@@ -649,6 +656,7 @@
       <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-10.3.4/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_platform_interface-4.1.12/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-3.3.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.9.3/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.2.7/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter_windows_3.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/lib" />
