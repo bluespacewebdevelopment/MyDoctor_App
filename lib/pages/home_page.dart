@@ -21,10 +21,13 @@ class HomePageState extends State<HomePage> {
         slivers: <Widget>[
             SliverAppBar(
             // title: const Text('MyApp'),
+              backgroundColor: Colors.white,
+            elevation: 2,
             expandedHeight: 150,
-            pinned: false,
+            pinned: true,
             floating: true,
           flexibleSpace: FlexibleSpaceBar(
+            collapseMode: CollapseMode.pin,
             title:  Text('Docs App',style: TextStyle(color: Theme.of(context).primaryColor),),
             background: Image.asset('assets/images/doctors.png',
               fit: BoxFit.fill,),
@@ -35,9 +38,13 @@ class HomePageState extends State<HomePage> {
           SliverList(
             delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int index) {
-                return Container();
+                return Container(
+                  height: 200,
+                  child: Center(child:
+                    FlutterLogo(size: 100,)),
+                );
               },
-              childCount: 20,
+              childCount: 10,
             ),
           ),
         ],
