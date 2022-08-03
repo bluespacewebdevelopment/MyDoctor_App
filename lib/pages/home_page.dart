@@ -17,14 +17,32 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MyDrawer(),
-      body: CustomScrollView(
+      body:  CustomScrollView(
         slivers: <Widget>[
-          SliverAppBar(
-            title: Text('MyApp'),
-          )
+            SliverAppBar(
+            // title: const Text('MyApp'),
+            expandedHeight: 150,
+            pinned: false,
+            floating: true,
+          flexibleSpace: FlexibleSpaceBar(
+            title:  Text('Docs App',style: TextStyle(color: Theme.of(context).primaryColor),),
+            background: Image.asset('assets/images/doctors.png',
+              fit: BoxFit.fill,),
+          ),
+             actions: const [
+             ],
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+                  (BuildContext context, int index) {
+                return Container();
+              },
+              childCount: 20,
+            ),
+          ),
         ],
       ),
-      bottomNavigationBar: Bottom_Bar(),
+      bottomNavigationBar: const Bottom_Bar(),
     );
   }
 }
