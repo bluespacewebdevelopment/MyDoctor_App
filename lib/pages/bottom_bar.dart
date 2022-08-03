@@ -8,8 +8,8 @@ class Bottom_Bar extends StatefulWidget {
 }
 
 class _Bottom_BarState extends State<Bottom_Bar> {
- final double size = 30;
- int selectIndex=0;
+  final double size = 30;
+  int selectIndex=0;
   @override
   Widget build(BuildContext context) {
 
@@ -20,21 +20,21 @@ class _Bottom_BarState extends State<Bottom_Bar> {
       backgroundColor: Theme.of(context).backgroundColor,
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-            tooltip: 'Home',
+          icon: Icon(Icons.home),
+          label: 'Home',
+          tooltip: 'Home',
         ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.confirmation_num_sharp),
-            label: 'Consult',
-            tooltip: 'Consult',
+          icon: Icon(Icons.confirmation_num_sharp),
+          label: 'Consult',
+          tooltip: 'Consult',
 
         ),
 
         BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-            tooltip: 'Profile',
+          icon: Icon(Icons.person),
+          label: 'Profile',
+          tooltip: 'Profile',
 
         ),
       ],
@@ -43,7 +43,7 @@ class _Bottom_BarState extends State<Bottom_Bar> {
       selectedItemColor: Theme.of(context).bottomAppBarColor,
       onTap: (int position) {
         setState(() {
-            selectIndex=position;
+          selectIndex=position;
         });
       },
     );
