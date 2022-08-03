@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Bottom_Bar extends StatefulWidget {
   const Bottom_Bar({Key? key}) : super(key: key);
 
@@ -7,13 +8,15 @@ class Bottom_Bar extends StatefulWidget {
 }
 
 class _Bottom_BarState extends State<Bottom_Bar> {
- final double size=30;
- Color color=Colors.green;
- MaterialColor splashColor=Colors.red;
+ final double size = 30;
   @override
   Widget build(BuildContext context) {
+
+    Color splashColor = Theme.of(context).splashColor;
+    Color color = Colors.green;
+
     return BottomAppBar(
-      color: Colors.lightBlue[400],
+      color: Theme.of(context).primaryColor,
       child: IconTheme(
         data: IconThemeData(
           color: Theme.of(context).errorColor,
@@ -28,7 +31,7 @@ class _Bottom_BarState extends State<Bottom_Bar> {
               onPressed: () {},
               icon:  Icon(
                 Icons.home,
-                color: Colors.yellow,
+                color: Colors.black,
                 size: size,
               ),
             ),
@@ -41,7 +44,7 @@ class _Bottom_BarState extends State<Bottom_Bar> {
                 splashRadius: 10,
                 icon: Icon(
                   Icons.message,
-                  color: color,
+                  color: Colors.black,
                   size: size,
                 )),
 
@@ -53,7 +56,7 @@ class _Bottom_BarState extends State<Bottom_Bar> {
               splashColor: splashColor,
               splashRadius: 10,
               icon:  Icon(Icons.person_rounded,
-                color: color,
+                color: Colors.black,
                 size: size,
               ),
 
