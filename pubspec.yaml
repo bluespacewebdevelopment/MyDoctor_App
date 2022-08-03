@@ -88,18 +88,18 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Lobster-Regular
-       fonts:
-         - asset: fonts/Lobster-Regular.ttf
-           style: italic
-     - family: PermanentMarker-Regular
-       fonts:
-         - asset: PermanentMarker-Regular.ttf
-           weight: 700
-     - family: PTMono-Regular
-       fonts:
-         - asset: fonts/PTMono-Regular.ttf
-           style: italic
+    - family: Lobster-Regular
+      fonts:
+       - asset: fonts/Lobster-Regular.ttf
+         style: italic
+    - family: PermanentMarker-Regular
+      fonts:
+       - asset: fonts/PermanentMarker-Regular.ttf
+         weight: 700
+    - family: PTMono-Regular
+      fonts:
+       - asset: fonts/PTMono-Regular.ttf
+         style: italic
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
