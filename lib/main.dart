@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MaterialColor _fullGreen = MaterialColor(0xFF00ff1e, color);
-    MaterialColor _lessGreen = MaterialColor(0xFF49f55e, color);
-    MaterialColor middleGreen = MaterialColor(0xFF41e324, color);
+    MaterialColor background = MaterialColor(0xFFe9f5ef, color);
+    MaterialColor bottom_barColor = MaterialColor(0xFF41e324, color);
     MaterialColor cardColor = MaterialColor(0xFFe9f5ef, color);
-    MaterialColor splashColor = MaterialColor(0xFFeb1a07, color);
+    MaterialColor splashColor = MaterialColor(0xFF5df565, color);
     MaterialColor primaryColor = MaterialColor(0xFFeb1a07, color);
 
 
@@ -26,6 +26,8 @@ class MyApp extends StatelessWidget {
         primaryColor:primaryColor,
         splashColor: splashColor,
         cardColor: cardColor,
+        bottomAppBarColor: bottom_barColor,
+        backgroundColor: background,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
       home: const HomePage(),

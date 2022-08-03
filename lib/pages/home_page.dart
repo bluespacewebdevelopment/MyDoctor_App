@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:doctor_app/utils/drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MyDrawer(),
-      body: const CustomScrollView(
+      body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
             title: Text('MyApp'),

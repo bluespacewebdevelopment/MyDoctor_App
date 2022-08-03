@@ -9,61 +9,43 @@ class Bottom_Bar extends StatefulWidget {
 
 class _Bottom_BarState extends State<Bottom_Bar> {
  final double size = 30;
+ int selectIndex=0;
   @override
   Widget build(BuildContext context) {
 
     Color splashColor = Theme.of(context).splashColor;
-    Color color = Colors.green;
+    Color color = Colors.blue;
 
-    return BottomAppBar(
-      color: Theme.of(context).primaryColor,
-      child: IconTheme(
-        data: IconThemeData(
-          color: Theme.of(context).errorColor,
+    return  BottomNavigationBar(
+      backgroundColor: Theme.of(context).backgroundColor,
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+            tooltip: 'Home',
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            IconButton(
-              tooltip: "Home",
-              splashColor: splashColor,
-              splashRadius: 10,
-              onPressed: () {},
-              icon:  Icon(
-                Icons.home,
-                color: Colors.black,
-                size: size,
-              ),
-            ),
-            IconButton(
-                tooltip: "Consltant",
-                onPressed: () {
-                  print("Hello message");
-                },
-                splashColor: splashColor,
-                splashRadius: 10,
-                icon: Icon(
-                  Icons.message,
-                  color: Colors.black,
-                  size: size,
-                )),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.confirmation_num_sharp),
+            label: 'Consult',
+            tooltip: 'Consult',
 
-            IconButton(
-              tooltip: "Profile",
-              onPressed: () {
-                print("Profile");
-              },
-              splashColor: splashColor,
-              splashRadius: 10,
-              icon:  Icon(Icons.person_rounded,
-                color: Colors.black,
-                size: size,
-              ),
-
-            )
-          ],
         ),
-      ),
+
+        BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+            tooltip: 'Profile',
+
+        ),
+      ],
+      currentIndex: selectIndex,
+      iconSize: 20,
+      selectedItemColor: Theme.of(context).bottomAppBarColor,
+      onTap: (int position) {
+        setState(() {
+            selectIndex=position;
+        });
+      },
     );
   }
 }
