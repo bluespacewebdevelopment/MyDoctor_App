@@ -12,12 +12,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     MaterialColor _fullGreen = MaterialColor(0xFF00ff1e, color);
     MaterialColor _lessGreen = MaterialColor(0xFF49f55e, color);
+    MaterialColor middleGreen = MaterialColor(0xFF41e324, color);
+    MaterialColor cardColor = MaterialColor(0xFFe9f5ef, color);
+    MaterialColor splashColor = MaterialColor(0xFFeb1a07, color);
+    MaterialColor primaryColor = MaterialColor(0xFFeb1a07, color);
+
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: _fullGreen,
+        primaryColor:primaryColor,
+        splashColor: splashColor,
+        cardColor: cardColor,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
       home: const HomePage(),
