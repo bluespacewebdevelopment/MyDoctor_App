@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: _fullGreen,
-        primaryColor:primaryColor,
+        primaryColor : _fullGreen,
         splashColor: splashColor,
         cardColor: cardColor,
         bottomAppBarColor: bottom_barColor,

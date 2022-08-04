@@ -1,10 +1,9 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatefulWidget {
 
-  MyDrawer({Key? key}) : super(key: key);
+  const MyDrawer({Key? key}) : super(key: key);
 
   @override
   State<MyDrawer> createState() => _MyDrawerState();
@@ -17,11 +16,16 @@ class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.yellow.shade50,
       elevation: 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(20),
+          bottomRight: Radius.circular(20),
+        ),
       ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
               width: double.infinity,
@@ -112,6 +116,14 @@ class _MyDrawerState extends State<MyDrawer> {
               onTap: () {
               },
             ),
+            const Spacer(),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text('Version : 2.4.68',),
+                Text('© 2022 DocsApp. All rights reserved'),
+              ],
+            )
 
           ],
         ));
