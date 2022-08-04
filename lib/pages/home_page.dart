@@ -61,30 +61,39 @@ class HomePageState extends State<HomePage> {
           borderRadius: BorderRadius.circular(15)
         ),
         child: Container(
-          padding:  const EdgeInsets.all(10),
           decoration:  BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             image: const DecorationImage(
                 image: NetworkImage('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/317363_1100-800x825.jpg'),
                 fit: BoxFit.fill),
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children:  [
-              const Text('Hello'),
-              Container(
-                padding: const EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.redAccent.shade200,
-                ),
-                child: const Text('Male',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,)
-                ),
-              )],
+          child: Align(
+            alignment: Alignment.bottomLeft,
+            child: Container(
+              height: 40,
+              width: 200,
+              decoration:  BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(15),
+                    bottomRight: Radius.circular(15),
+                  ),
+                  gradient: LinearGradient(
+                      colors: [
+                        Colors.purple,
+                        Colors.blue.withOpacity(0.5),
+                        Colors.red.withOpacity(0.2),
+                            ],
+                    tileMode: TileMode.mirror,
+                    stops: const [0,1,2],
+                    begin: Alignment.bottomLeft,
+                  )
+              ),
+              child: const Text(' Fracture',style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.white
+              ),),
+            ),
           ),
         ),
       );
