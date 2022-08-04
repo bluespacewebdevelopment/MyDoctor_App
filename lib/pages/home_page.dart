@@ -40,7 +40,7 @@ class HomePageState extends State<HomePage> {
                   (BuildContext context, int index) {
                 return Container(
                   height: 200,
-                  child: Center(child:
+                  child: const Center(child:
                     FlutterLogo(size: 100,)),
                 );
               },
