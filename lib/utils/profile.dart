@@ -1,4 +1,6 @@
+import 'package:doctor_app/pages/bottom_bar.dart';
 import 'package:flutter/material.dart';
+
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
 
@@ -9,6 +11,14 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        surfaceTintColor: Colors.cyan,
+      ),
+      body: Container(
+        color: Colors.white,
+      ),
+      bottomNavigationBar: Bottom_Bar(),
+    );
   }
 }

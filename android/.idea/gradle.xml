@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/awesome_notifications-0.6.21/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-3.4.3/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.6.2/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.20.0/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-10.3.4/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.2.7/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_android-0.8.5+1/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.17/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_android-10.0.0/android" />
+            <option value="$PROJECT_DIR$/../../../SSDDownload/Environment_Setup/Flutter_SDK/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.12/android" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

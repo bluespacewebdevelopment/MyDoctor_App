@@ -1,7 +1,11 @@
+import 'package:doctor_app/pages/home_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import './pages/home_page.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -10,30 +14,33 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MaterialColor _fullGreen = MaterialColor(0xFF00ff1e, color);
-    MaterialColor background = MaterialColor(0xFFe9f5ef, color);
-    MaterialColor bottom_barColor = MaterialColor(0xFF41e324, color);
-    MaterialColor cardColor = MaterialColor(0xFFe9f5ef, color);
-    MaterialColor splashColor = MaterialColor(0xFF5df565, color);
-    MaterialColor primaryColor = MaterialColor(0xFFeb1a07, color);
-
+    MaterialColor fullGreen = const MaterialColor(0xFF00ff1e, color);
+    MaterialColor background = const MaterialColor(0xFFe9f5ef, color);
+    MaterialColor bottomBarColor = const MaterialColor(0xFF41e324, color);
+    MaterialColor cardColor = const MaterialColor(0xFFe9f5ef, color);
+    MaterialColor splashColor = const MaterialColor(0xFF5df565, color);
+    MaterialColor primaryColor = const MaterialColor(0xFFeb1a07, color);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: _fullGreen,
-        primaryColor : _fullGreen,
+        primarySwatch: fullGreen,
+        primaryColor: primaryColor,
         splashColor: splashColor,
         cardColor: cardColor,
-        bottomAppBarColor: bottom_barColor,
+        bottomAppBarColor: bottomBarColor,
         backgroundColor: background,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      home: const HomePage(),
+      initialRoute: 'home',
+      routes: {
+        'home': (context) => const HomePage(),
+      },
     );
   }
 }
+
 const Map<int, Color> color = {
   50: Color.fromRGBO(136, 14, 79, .1),
   100: Color.fromRGBO(136, 14, 79, .2),
